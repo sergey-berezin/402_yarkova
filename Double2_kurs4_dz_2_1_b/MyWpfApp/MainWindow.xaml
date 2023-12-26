@@ -1,0 +1,18 @@
+﻿<Window x:Class="MyWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="loadButton" Content="Загрузить текст" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Height="30" Margin="39,25,0,0" Click="loadButton_Click"/>
+        <TextBlock FontSize="16" HorizontalAlignment="Left" Margin="39,286,0,124"><Run Language="ru-ru" Text="Ваш вопрос:"/></TextBlock>
+        <TextBox x:Name="chatTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,112,0,0" IsReadOnly="True" Height="105" Width="689" TextChanged="chatTextBox_TextChanged"/>
+        <TextBox x:Name="questionTextBox_Copy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="20" Margin="156,290,0,0" TextChanged="questionTextBox_TextChanged"/>
+        <Button x:Name="sendButton_Copy" Content="Получить ответ" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="30" Margin="591,285,0,0" Click="sendButton_Click"/>
+        <Button x:Name="cancelButton" Content="Отмена" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Height="30" Margin="621,374,0,0" Click="cancelButton_Click"/>
+
+    </Grid>
+</Window>
